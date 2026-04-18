@@ -19,7 +19,7 @@ public class SemaphoresDemo {
     // 3. Full Slots: Counts items available. Starts empty (0).
     private static final Semaphore fullSlots = new Semaphore(0);
 
-    public static void main(String[] args) {
+    public void run() {
         // Create producer and consumer threads
         Thread producerThread = new Thread(new Producer(), "Producer");
         Thread consumerThread = new Thread(new Consumer(), "Consumer");
