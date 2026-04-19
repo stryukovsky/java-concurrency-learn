@@ -15,10 +15,12 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     // Use JUnit test framework.
     testImplementation(libs.junit)
 
+    implementation("com.h2database:h2:2.2.224")
     // This dependency is used by the application.
     implementation(libs.guava)
 }
